@@ -70,7 +70,35 @@ const translations = {
         'signup.button': 'Sign Up Now',
         'footer.copyright': '© 2025 SesNot. All rights reserved.',
         'footer.privacy': 'Privacy Policy',
-        'footer.terms': 'Terms of Service'
+        'footer.terms': 'Terms of Service',
+        'privacy.title': 'Privacy Policy',
+        'privacy.lastUpdated': 'Last Updated: May 1, 2025',
+        'privacy.intro': 'This privacy policy explains how the Sesnot application collects, uses, and protects your personal information.',
+        'privacy.collectedInfo.title': 'Collected Information',
+        'privacy.collectedInfo.desc': 'The Sesnot application converts audio recordings uploaded by users into text using OpenAI\'s Whisper API service. During this process:',
+        'privacy.collectedInfo.points': [
+            'Audio files uploaded by users are sent to the OpenAI API service for processing.',
+            'Audio recordings are processed by OpenAI solely for the purpose of creating transcripts and are subject to OpenAI\'s privacy policy.',
+            'Text records created by the user are stored within the application and can be deleted by the user upon request.'
+        ],
+        'privacy.firebase.title': 'Firebase and User Management',
+        'privacy.firebase.points': [
+            'In the near future, the application will offer Firebase-based user login system and paid subscription plans.',
+            'Users\' email addresses and membership information will be securely stored on Firebase.'
+        ],
+        'privacy.ads.title': 'Advertisement Display',
+        'privacy.ads.points': [
+            'Advertisements provided by Google AdMob are displayed in the application for free users.',
+            'Advertisements are subject to Google\'s advertising policies, and user information may be collected by Google.'
+        ],
+        'privacy.userRights.title': 'User Rights',
+        'privacy.userRights.desc': 'Users have the right to view, modify, and delete their own data. These requests can be made through the application or through our support communication channels.',
+        'privacy.security.title': 'Information Security',
+        'privacy.security.desc': 'The Sesnot application takes necessary technical and administrative measures to protect user data. However, please note that data transmission over the internet is not 100% secure.',
+        'privacy.changes.title': 'Changes',
+        'privacy.changes.desc': 'This privacy policy may be updated from time to time. Users will be notified within the application when updates are made.',
+        'privacy.contact.title': 'Contact',
+        'privacy.contact.desc': 'If you have any questions, please contact us:'
     },
     tr: {
         'meta.title': 'SesNot - Yapay Zeka Ses Dönüşümü',
@@ -143,7 +171,35 @@ const translations = {
         'signup.button': 'Şimdi Kaydol',
         'footer.copyright': '© 2025 SesNot. Tüm hakları saklıdır.',
         'footer.privacy': 'Gizlilik Politikası',
-        'footer.terms': 'Kullanım Koşulları'
+        'footer.terms': 'Kullanım Koşulları',
+        'privacy.title': 'Gizlilik Politikası',
+        'privacy.lastUpdated': 'Son Güncelleme: 1 Mayıs 2025',
+        'privacy.intro': 'Bu gizlilik politikası, Sesnot uygulamasının kişisel bilgilerinizi nasıl topladığı, kullandığı ve koruduğunu açıklamaktadır.',
+        'privacy.collectedInfo.title': 'Toplanan Bilgiler',
+        'privacy.collectedInfo.desc': 'Sesnot uygulaması, kullanıcılar tarafından yüklenen ses kayıtlarını OpenAI\'ın Whisper API hizmetini kullanarak metne dönüştürmektedir. Bu süreçte:',
+        'privacy.collectedInfo.points': [
+            'Kullanıcıların yüklediği ses dosyaları işlenmek üzere OpenAI API hizmetine gönderilir.',
+            'Ses kayıtları OpenAI tarafından yalnızca transkript oluşturmak amacıyla işlenir ve OpenAI\'ın gizlilik politikasına tabidir.',
+            'Kullanıcı tarafından oluşturulan metin kayıtları uygulama içinde saklanır ve kullanıcı istediğinde silinebilir.'
+        ],
+        'privacy.firebase.title': 'Firebase ve Kullanıcı Yönetimi',
+        'privacy.firebase.points': [
+            'Yakın gelecekte uygulamada Firebase tabanlı kullanıcı giriş sistemi ve ücretli üyelik planları sunulacaktır.',
+            'Kullanıcıların e-posta adresleri ve üyelik bilgileri Firebase üzerinde güvenli olarak saklanacaktır.'
+        ],
+        'privacy.ads.title': 'Reklam Gösterimi',
+        'privacy.ads.points': [
+            'Ücretsiz kullanıcılar için uygulamada Google AdMob tarafından sunulan reklamlar gösterilir.',
+            'Reklamlar, Google\'ın reklam politikalarına tabidir ve kullanıcı bilgileri Google tarafından toplanabilir.'
+        ],
+        'privacy.userRights.title': 'Kullanıcı Hakları',
+        'privacy.userRights.desc': 'Kullanıcılar, kendi verilerini görüntüleme, değiştirme ve silme hakkına sahiptir. Bu talepler uygulama üzerinden veya destek iletişim kanallarımız aracılığıyla yapılabilir.',
+        'privacy.security.title': 'Bilgi Güvenliği',
+        'privacy.security.desc': 'Sesnot uygulaması, kullanıcı verilerini korumak için gerekli teknik ve idari önlemleri alır. Ancak internet ortamındaki veri iletiminin %100 güvenli olmadığını unutmayınız.',
+        'privacy.changes.title': 'Değişiklikler',
+        'privacy.changes.desc': 'Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler yapıldığında kullanıcılarımız uygulama içinde bilgilendirilecektir.',
+        'privacy.contact.title': 'İletişim',
+        'privacy.contact.desc': 'Herhangi bir sorunuz varsa, lütfen bize ulaşın:'
     }
 };
 
