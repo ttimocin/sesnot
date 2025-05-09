@@ -11,16 +11,20 @@
         <nav>
             <div class="logo">
                 <img src="assets/logo.png" alt="SesNot Logo" class="logo-img">
-                <span data-i18n="nav.logo">SesNot</span>
+                <a href="index.html" data-i18n="nav.logo">SesNot</a>
             </div>
-            <ul>
-                <li><a href="#features" data-i18n="nav.features">Features</a></li>
-                <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-                <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
+                <a href="#" data-i18n="nav.features">Özellikler</a>
+                <a href="#" data-i18n="nav.pricing">Fiyatlandırma</a>
+                <a href="#" data-i18n="nav.contact">İletişim</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Gizlilik Politikası</a>
+            </div>
             <div class="language-selector">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="tr">TR</button>
+                <select id="languageSelect">
+                    <option value="tr">Türkçe</option>
+                    <option value="en">English</option>
+                </select>
             </div>
         </nav>
     </header>
