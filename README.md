@@ -49,5 +49,5 @@ uvicorn app:app --reload
 ## 👤 Geliştirici
 
 **Taygun Timoçin**  
-🌐 [tayguntimocin.com](https://tayguntimocin.com)  
-📱 [LinkedIn Profilim](https://www.linkedin.com/in/tayguntimocin)
+🌐 [tayguntimocin.com](https://appanddesign.com)  
+📱 [LinkedIn Profilim](https://www.linkedin.com/in/timocin/)
