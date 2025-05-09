@@ -1,18 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('nav ul li a[href^="#"]');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            let targetId = this.getAttribute('href');
-            // Ensure targetId includes the '#' for querySelector
-            if (targetId.length > 1 && targetId.startsWith('#')) {
-                let targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
         });
     });
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
 
     // Handle Sign Up Form Submission (Basic Example)
     const signupForm = document.getElementById('signup-form');
@@ -64,6 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animatedSections.forEach(section => {
         observer.observe(section);
+    });
+
+    // Language selector functionality
+    document.getElementById('languageSelect').addEventListener('change', function() {
+        const selectedLang = this.value;
+        changeLanguage(selectedLang);
     });
 
 });
