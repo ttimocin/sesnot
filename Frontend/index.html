@@ -10,11 +10,17 @@
     <header>
         <nav>
             <div class="logo">SesNot</div>
+            <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+            </div>
             <ul>
-                <li><a href="#features">Özellikler</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#pricing">Fiyatlar</a></li>
-                <li><a href="#signup" class="cta-button nav-cta">Sign Up</a></li>
+                <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="#signup" class="cta-button nav-cta" data-i18n="nav.signup">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -173,6 +179,7 @@
         </ul>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
