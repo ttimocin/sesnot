@@ -4,58 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="privacy.title">Gizlilik Politikası</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .privacy-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .privacy-container h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .privacy-container h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        .privacy-container p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .privacy-container ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        .privacy-container li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-        .privacy-container .last-updated {
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        @media (max-width: 768px) {
-            .privacy-container {
-                padding: 15px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
+                <img src="assets/logo.png" alt="SesNot Logo" class="logo-img">
                 <a href="index.html" data-i18n="nav.logo">SesNot</a>
             </div>
             <div class="nav-links">
-                <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
-                <a href="#" data-i18n="nav.features">Özellikler</a>
-                <a href="#" data-i18n="nav.pricing">Fiyatlandırma</a>
-                <a href="#" data-i18n="nav.contact">İletişim</a>
+                <a href="index.html#hero" data-i18n="nav.home">Ana Sayfa</a>
+                <a href="index.html#features" data-i18n="nav.features">Özellikler</a>
+                <a href="index.html#pricing" data-i18n="nav.pricing">Fiyatlandırma</a>
+                <a href="index.html#contact" data-i18n="nav.contact">İletişim</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Gizlilik Politikası</a>
             </div>
             <div class="language-selector">
                 <select id="languageSelect">
@@ -66,44 +29,60 @@
         </nav>
     </header>
 
-    <main class="privacy-container">
-        <h1 data-i18n="privacy.title">Gizlilik Politikası</h1>
-        <p class="last-updated" data-i18n="privacy.lastUpdated">Son Güncelleme: 1 Mayıs 2025</p>
-        
-        <p data-i18n="privacy.intro">Bu gizlilik politikası, Sesnot uygulamasının kişisel bilgilerinizi nasıl topladığı, kullandığı ve koruduğunu açıklamaktadır.</p>
+    <main class="privacy-content">
+        <div class="container">
+            <h1 data-i18n="privacy.title">Gizlilik Politikası</h1>
+            <p class="last-updated" data-i18n="privacy.lastUpdated">Son Güncelleme: 1 Mayıs 2025</p>
+            
+            <p class="intro" data-i18n="privacy.intro">Bu gizlilik politikası, Sesnot uygulamasının kişisel bilgilerinizi nasıl topladığı, kullandığı ve koruduğunu açıklamaktadır.</p>
 
-        <h2 data-i18n="privacy.collectedInfo.title">Toplanan Bilgiler</h2>
-        <p data-i18n="privacy.collectedInfo.desc">Sesnot uygulaması, kullanıcılar tarafından yüklenen ses kayıtlarını OpenAI'ın Whisper API hizmetini kullanarak metne dönüştürmektedir. Bu süreçte:</p>
-        <ul>
-            <li data-i18n="privacy.collectedInfo.points.0">Kullanıcıların yüklediği ses dosyaları işlenmek üzere OpenAI API hizmetine gönderilir.</li>
-            <li data-i18n="privacy.collectedInfo.points.1">Ses kayıtları OpenAI tarafından yalnızca transkript oluşturmak amacıyla işlenir ve OpenAI'ın gizlilik politikasına tabidir.</li>
-            <li data-i18n="privacy.collectedInfo.points.2">Kullanıcı tarafından oluşturulan metin kayıtları uygulama içinde saklanır ve kullanıcı istediğinde silinebilir.</li>
-        </ul>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.collectedInfo.title">Toplanan Bilgiler</h2>
+                <p data-i18n="privacy.collectedInfo.desc">Sesnot uygulaması, kullanıcılar tarafından yüklenen ses kayıtlarını OpenAI'ın Whisper API hizmetini kullanarak metne dönüştürmektedir. Bu süreçte:</p>
+                <ul>
+                    <li data-i18n="privacy.collectedInfo.points.0">Kullanıcıların yüklediği ses dosyaları işlenmek üzere OpenAI API hizmetine gönderilir.</li>
+                    <li data-i18n="privacy.collectedInfo.points.1">Ses kayıtları OpenAI tarafından yalnızca transkript oluşturmak amacıyla işlenir ve OpenAI'ın gizlilik politikasına tabidir.</li>
+                    <li data-i18n="privacy.collectedInfo.points.2">Kullanıcı tarafından oluşturulan metin kayıtları uygulama içinde saklanır ve kullanıcı istediğinde silinebilir.</li>
+                </ul>
+            </div>
 
-        <h2 data-i18n="privacy.firebase.title">Firebase ve Kullanıcı Yönetimi</h2>
-        <ul>
-            <li data-i18n="privacy.firebase.points.0">Yakın gelecekte uygulamada Firebase tabanlı kullanıcı giriş sistemi ve ücretli üyelik planları sunulacaktır.</li>
-            <li data-i18n="privacy.firebase.points.1">Kullanıcıların e-posta adresleri ve üyelik bilgileri Firebase üzerinde güvenli olarak saklanacaktır.</li>
-        </ul>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.firebase.title">Firebase ve Kullanıcı Yönetimi</h2>
+                <ul>
+                    <li data-i18n="privacy.firebase.points.0">Yakın gelecekte uygulamada Firebase tabanlı kullanıcı giriş sistemi ve ücretli üyelik planları sunulacaktır.</li>
+                    <li data-i18n="privacy.firebase.points.1">Kullanıcıların e-posta adresleri ve üyelik bilgileri Firebase üzerinde güvenli olarak saklanacaktır.</li>
+                </ul>
+            </div>
 
-        <h2 data-i18n="privacy.ads.title">Reklam Gösterimi</h2>
-        <ul>
-            <li data-i18n="privacy.ads.points.0">Ücretsiz kullanıcılar için uygulamada Google AdMob tarafından sunulan reklamlar gösterilir.</li>
-            <li data-i18n="privacy.ads.points.1">Reklamlar, Google'ın reklam politikalarına tabidir ve kullanıcı bilgileri Google tarafından toplanabilir.</li>
-        </ul>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.ads.title">Reklam Gösterimi</h2>
+                <ul>
+                    <li data-i18n="privacy.ads.points.0">Ücretsiz kullanıcılar için uygulamada Google AdMob tarafından sunulan reklamlar gösterilir.</li>
+                    <li data-i18n="privacy.ads.points.1">Reklamlar, Google'ın reklam politikalarına tabidir ve kullanıcı bilgileri Google tarafından toplanabilir.</li>
+                </ul>
+            </div>
 
-        <h2 data-i18n="privacy.userRights.title">Kullanıcı Hakları</h2>
-        <p data-i18n="privacy.userRights.desc">Kullanıcılar, kendi verilerini görüntüleme, değiştirme ve silme hakkına sahiptir. Bu talepler uygulama üzerinden veya destek iletişim kanallarımız aracılığıyla yapılabilir.</p>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.userRights.title">Kullanıcı Hakları</h2>
+                <p data-i18n="privacy.userRights.desc">Kullanıcılar, kendi verilerini görüntüleme, değiştirme ve silme hakkına sahiptir. Bu talepler uygulama üzerinden veya destek iletişim kanallarımız aracılığıyla yapılabilir.</p>
+            </div>
 
-        <h2 data-i18n="privacy.security.title">Bilgi Güvenliği</h2>
-        <p data-i18n="privacy.security.desc">Sesnot uygulaması, kullanıcı verilerini korumak için gerekli teknik ve idari önlemleri alır. Ancak internet ortamındaki veri iletiminin %100 güvenli olmadığını unutmayınız.</p>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.security.title">Bilgi Güvenliği</h2>
+                <p data-i18n="privacy.security.desc">Sesnot uygulaması, kullanıcı verilerini korumak için gerekli teknik ve idari önlemleri alır. Ancak internet ortamındaki veri iletiminin %100 güvenli olmadığını unutmayınız.</p>
+            </div>
 
-        <h2 data-i18n="privacy.changes.title">Değişiklikler</h2>
-        <p data-i18n="privacy.changes.desc">Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler yapıldığında kullanıcılarımız uygulama içinde bilgilendirilecektir.</p>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.changes.title">Değişiklikler</h2>
+                <p data-i18n="privacy.changes.desc">Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler yapıldığında kullanıcılarımız uygulama içinde bilgilendirilecektir.</p>
+            </div>
 
-        <h2 data-i18n="privacy.contact.title">İletişim</h2>
-        <p data-i18n="privacy.contact.desc">Herhangi bir sorunuz varsa, lütfen bize ulaşın:</p>
-        <p>E-posta: info@sesnot.com</p>
+            <div class="privacy-section">
+                <h2 data-i18n="privacy.contact.title">İletişim</h2>
+                <p data-i18n="privacy.contact.desc">Herhangi bir sorunuz varsa, lütfen bize ulaşın:</p>
+                <p>E-posta: info@sesnot.com</p>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -115,6 +94,6 @@
     </footer>
 
     <script src="translations.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 
