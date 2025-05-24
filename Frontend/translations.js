@@ -98,7 +98,15 @@ const translations = {
         'privacy.changes.title': 'Changes',
         'privacy.changes.desc': 'This privacy policy may be updated from time to time. Users will be notified within the application when updates are made.',
         'privacy.contact.title': 'Contact',
-        'privacy.contact.desc': 'If you have any questions, please contact us:'
+        'privacy.contact.desc': 'If you have any questions, please contact us:',
+        'contact.title': 'Contact',
+        'contact.subtitle': 'Get in touch with us for any questions',
+        'contact.form.name': 'Your Name',
+        'contact.form.email': 'Your Email',
+        'contact.form.subject': 'Subject',
+        'contact.form.message': 'Your Message',
+        'contact.form.submit': 'Send',
+        'contact.form.success': 'Message sent successfully!'
     },
     tr: {
         'meta.title': 'SesNot - Yapay Zeka Ses Dönüşümü',
@@ -199,7 +207,15 @@ const translations = {
         'privacy.changes.title': 'Değişiklikler',
         'privacy.changes.desc': 'Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler yapıldığında kullanıcılarımız uygulama içinde bilgilendirilecektir.',
         'privacy.contact.title': 'İletişim',
-        'privacy.contact.desc': 'Herhangi bir sorunuz varsa, lütfen bize ulaşın:'
+        'privacy.contact.desc': 'Herhangi bir sorunuz varsa, lütfen bize ulaşın:',
+        'contact.title': 'İletişim',
+        'contact.subtitle': 'Sorularınız için bize ulaşın',
+        'contact.form.name': 'Adınız',
+        'contact.form.email': 'E-posta Adresiniz',
+        'contact.form.subject': 'Konu',
+        'contact.form.message': 'Mesajınız',
+        'contact.form.submit': 'Gönder',
+        'contact.form.success': 'Mesajınız başarıyla gönderildi!'
     }
 };
 
