@@ -70,6 +70,31 @@ document.addEventListener('DOMContentLoaded', function() {
         changeLanguage(selectedLang);
     });
 
+    // Mobil menü işlemleri
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Menü linklerine tıklandığında menüyü kapat
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Sayfa dışına tıklandığında menüyü kapat
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-links') && !event.target.closest('.menu-toggle')) {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+
 });
 
 // Add a CSS class for the fade-in animation
