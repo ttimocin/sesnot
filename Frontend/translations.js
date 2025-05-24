@@ -233,14 +233,22 @@ function changeLanguage(lang) {
 
 // Sayfa yüklendiğinde varsayılan dili ayarla
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultLang = 'en';
+    // Tarayıcı dilini al veya varsayılan olarak Türkçe kullan
+    const browserLang = navigator.language.split('-')[0];
+    const defaultLang = (browserLang === 'tr' || browserLang === 'en') ? browserLang : 'tr';
+    
+    // Dil seçimini güncelle
+    const languageSelect = document.getElementById('languageSelect');
+    if (languageSelect) {
+        languageSelect.value = defaultLang;
+    }
+    
     changeLanguage(defaultLang);
 
-    // Dil butonlarına tıklama olayı ekle
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            changeLanguage(lang);
+    // Dil seçici değişikliğini dinle
+    if (languageSelect) {
+        languageSelect.addEventListener('change', (e) => {
+            changeLanguage(e.target.value);
         });
-    });
+    }
 }); 
