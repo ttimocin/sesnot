@@ -2,7 +2,9 @@ const translations = {
     en: {
         'meta.title': 'SesNot - AI Voice Transcription',
         'nav.logo': 'SesNot',
+        'nav.home': 'Home',
         'nav.features': 'Features',
+        'nav.contact': 'Contact',
         'nav.testimonials': 'Testimonials',
         'nav.pricing': 'Pricing',
         'nav.signup': 'Sign Up',
@@ -48,7 +50,7 @@ const translations = {
         'pricing.title': 'Simple, Transparent Pricing',
         'pricing.monthly': '/month',
         'pricing.free.title': 'Free',
-        'pricing.free.feature1': 'Up to 60 minutes of transcription',
+        'pricing.free.feature1': 'Up to 15 minutes of transcription',
         'pricing.free.feature2': 'Basic AI features',
         'pricing.free.feature3': 'Standard support',
         'pricing.free.cta': 'Get Started',
@@ -111,7 +113,9 @@ const translations = {
     tr: {
         'meta.title': 'SesNot - Yapay Zeka Ses Dönüşümü',
         'nav.logo': 'SesNot',
+        'nav.home': 'Ana Sayfa',
         'nav.features': 'Özellikler',
+        'nav.contact': 'İletişim',
         'nav.testimonials': 'Referanslar',
         'nav.pricing': 'Fiyatlandırma',
         'nav.signup': 'Kayıt Ol',
@@ -157,7 +161,7 @@ const translations = {
         'pricing.title': 'Basit, Şeffaf Fiyatlandırma',
         'pricing.monthly': '/ay',
         'pricing.free.title': 'Ücretsiz',
-        'pricing.free.feature1': '60 dakikaya kadar dönüşüm',
+        'pricing.free.feature1': '15 dakikaya kadar dönüşüm',
         'pricing.free.feature2': 'Temel yapay zeka özellikleri',
         'pricing.free.feature3': 'Standart destek',
         'pricing.free.cta': 'Başla',
@@ -249,9 +253,12 @@ function changeLanguage(lang) {
 
 // Sayfa yüklendiğinde varsayılan dili ayarla
 document.addEventListener('DOMContentLoaded', () => {
-    // Tarayıcı dilini al veya varsayılan olarak Türkçe kullan
+    // Önce localStorage'dan kaydedilmiş dili kontrol et
+    const savedLang = localStorage.getItem('selectedLanguage');
+    
+    // Eğer kaydedilmiş dil yoksa, tarayıcı dilini al veya varsayılan olarak Türkçe kullan
     const browserLang = navigator.language.split('-')[0];
-    const defaultLang = (browserLang === 'tr' || browserLang === 'en') ? browserLang : 'tr';
+    const defaultLang = savedLang || ((browserLang === 'tr' || browserLang === 'en') ? browserLang : 'tr');
     
     // Dil seçimini güncelle
     const languageSelect = document.getElementById('languageSelect');
@@ -264,7 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dil seçici değişikliğini dinle
     if (languageSelect) {
         languageSelect.addEventListener('change', (e) => {
-            changeLanguage(e.target.value);
+            const selectedLang = e.target.value;
+            localStorage.setItem('selectedLanguage', selectedLang);
+            changeLanguage(selectedLang);
         });
     }
 }); 

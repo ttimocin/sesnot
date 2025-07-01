@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Dil seçimini localStorage'dan yükle
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang) {
+        const languageSelect = document.getElementById('languageSelect');
+        if (languageSelect) {
+            languageSelect.value = savedLang;
+            changeLanguage(savedLang);
+        }
+    }
+    
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -67,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Language selector functionality
     document.getElementById('languageSelect').addEventListener('change', function() {
         const selectedLang = this.value;
+        localStorage.setItem('selectedLanguage', selectedLang);
         changeLanguage(selectedLang);
     });
 
