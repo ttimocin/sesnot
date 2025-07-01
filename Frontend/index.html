@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">SesNot - AI Voice Transcription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="SesNot Logo" class="logo-img">
+                <a href="index.html" data-i18n="nav.logo">SesNot</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" data-i18n="nav.home">Ana Sayfa</a>
+                <a href="#features" data-i18n="nav.features">Özellikler</a>
+                <a href="#pricing" data-i18n="nav.pricing">Fiyatlandırma</a>
+                <a href="#contact" data-i18n="nav.contact">İletişim</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Gizlilik Politikası</a>
+            </div>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="tr">Türkçe</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <p class="subtitle" data-i18n="hero.subtitle">SesNot uses cutting-edge AI to transcribe your voice notes, meetings, and ideas into polished text in minutes. Boost your productivity and never miss a detail.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.taytek.sesnotapp" class="cta-button hero-cta" data-i18n="hero.cta">Get Started for Free</a>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 data-i18n="features.title">Why Choose SesNot?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="assets/anasayfa1.jpg" alt="Fast Transcription Icon">
+                    <h3 data-i18n="features.speed.title">Lightning-Fast Transcription</h3>
+                    <p data-i18n="features.speed.desc">Convert hours of audio into text within minutes with our advanced AI.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/anasayfa2.jpg" alt="High Accuracy Icon">
+                    <h3 data-i18n="features.accuracy.title">Unmatched Accuracy</h3>
+                    <p data-i18n="features.accuracy.desc">Experience industry-leading transcription accuracy, even with background noise or multiple speakers.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/anasayfa3.jpg" alt="Easy Integration Icon">
+                    <h3 data-i18n="features.workflow.title">Seamless Workflow</h3>
+                    <p data-i18n="features.workflow.desc">Easily upload audio files or record directly within the app. Export in various formats.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/anasayfa4.jpg" alt="AI Editing Icon">
+                    <h3 data-i18n="features.ai.title">AI-Powered Editing</h3>
+                    <p data-i18n="features.ai.desc">From idea to polished post in minutes. Our upcoming AI will help refine your transcriptions into ready-to-publish content.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2 data-i18n="howitworks.title">Transform Your Ideas in 3 Simple Steps</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3 data-i18n="howitworks.step1.title">Record or Upload</h3>
+                    <p data-i18n="howitworks.step1.desc">Speak your mind directly into the app or upload your existing audio files.</p>
+                </div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3 data-i18n="howitworks.step2.title">AI Transcribes</h3>
+                    <p data-i18n="howitworks.step2.desc">Our powerful AI gets to work, converting your voice to accurate text in real-time or near real-time.</p>
+                </div>
+                <div class="step-arrow">&rarr;</div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3 data-i18n="howitworks.step3.title">Edit & Export</h3>
+                    <p data-i18n="howitworks.step3.desc">Review, make quick edits if needed, and export your polished text in your preferred format.</p>
+                </div>
+            </div>
+            <div class="side-by-side-example">
+                <h4 data-i18n="howitworks.example.title">Example: Raw Idea to Polished Note</h4>
+                <div class="example-container">
+                    <div class="raw-idea">
+                        <h5 data-i18n="howitworks.example.raw.title">Raw Voice Note (Audio)</h5>
+                        <p data-i18n="howitworks.example.raw.text">"Okay, so for the new marketing campaign... let's focus on... um... social media engagement... target audience is young professionals... maybe a contest? Yeah, a contest could work... prizes should be... our premium subscription..."</p>
+                    </div>
+                    <div class="finished-output">
+                        <h5 data-i18n="howitworks.example.finished.title">SesNot Transcribed & Refined (Text)</h5>
+                        <p><strong data-i18n="howitworks.example.finished.strategy">Marketing Campaign Strategy:</strong></p>
+                        <ul>
+                            <li><strong data-i18n="howitworks.example.finished.objective">Objective:</strong> <span data-i18n="howitworks.example.finished.objective.text">Increase social media engagement.</span></li>
+                            <li><strong data-i18n="howitworks.example.finished.target">Target Audience:</strong> <span data-i18n="howitworks.example.finished.target.text">Young professionals.</span></li>
+                            <li><strong data-i18n="howitworks.example.finished.tactic">Key Tactic:</strong> <span data-i18n="howitworks.example.finished.tactic.text">Launch a contest.</span></li>
+                            <li><strong data-i18n="howitworks.example.finished.prize">Prize Idea:</strong> <span data-i18n="howitworks.example.finished.prize.text">SesNot premium subscription.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2 data-i18n="testimonials.title">Loved by Professionals</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p data-i18n="testimonials.1.text">"SesNot has revolutionized how I take meeting notes. What used to take hours now takes minutes. The accuracy is incredible!"</p>
+                    <h4 data-i18n="testimonials.1.author">- Alex P., Project Manager</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p data-i18n="testimonials.2.text">"As a content creator, SesNot helps me quickly transcribe interviews and voice memos, speeding up my entire workflow. A true game-changer!"</p>
+                    <h4 data-i18n="testimonials.2.author">- Sarah L., Blogger</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p data-i18n="testimonials.3.text">"I was skeptical about AI transcription, but SesNot won me over. It's easy to use and surprisingly accurate. Highly recommend!"</p>
+                    <h4 data-i18n="testimonials.3.author">- Michael B., Consultant</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2 data-i18n="pricing.title">Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-tier">
+                    <h3 data-i18n="pricing.free.title">Free</h3>
+                    <p class="price"><sup>$</sup>0<span data-i18n="pricing.monthly">/month</span></p>
+                    <ul>
+                        <li data-i18n="pricing.free.feature1">Up to 60 minutes of transcription</li>
+                        <li data-i18n="pricing.free.feature2">Basic AI features</li>
+                        <li data-i18n="pricing.free.feature3">Standard support</li>
+                    </ul>
+                    <a href="#signup" class="cta-button-outline" data-i18n="pricing.free.cta">Get Started</a>
+                </div>
+                <div class="pricing-tier popular">
+                    <h3 data-i18n="pricing.pro.title">Pro</h3>
+                    <p class="price"><sup>$</sup>15<span data-i18n="pricing.monthly">/month</span></p>
+                    <ul>
+                        <li data-i18n="pricing.pro.feature1">Up to 600 minutes of transcription</li>
+                        <li data-i18n="pricing.pro.feature2">Advanced AI features & editing</li>
+                        <li data-i18n="pricing.pro.feature3">Priority support</li>
+                        <li data-i18n="pricing.pro.feature4">Multiple export formats</li>
+                    </ul>
+                    <a href="#signup" class="cta-button" data-i18n="pricing.pro.cta">Choose Pro</a>
+                </div>
+                <div class="pricing-tier">
+                    <h3 data-i18n="pricing.business.title">Business</h3>
+                    <p class="price"><sup>$</sup>45<span data-i18n="pricing.monthly">/month</span></p>
+                    <ul>
+                        <li data-i18n="pricing.business.feature1">Up to 2000 minutes of transcription</li>
+                        <li data-i18n="pricing.business.feature2">All Pro features</li>
+                        <li data-i18n="pricing.business.feature3">Team collaboration tools</li>
+                        <li data-i18n="pricing.business.feature4">Dedicated account manager</li>
+                    </ul>
+                    <a href="#signup" class="cta-button-outline" data-i18n="pricing.business.cta">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup">
+            <h2 data-i18n="signup.title">Hemen İndirin!</h2>
+            <p data-i18n="signup.subtitle">SesNot'u hemen indirin ve sesli notlarınızı metne dönüştürmeye başlayın.</p>
+            <div class="store-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.taytek.sesnotapp" class="store-button" target="_blank">
+                    <img src="assets/google-play-badge.png" alt="Get it on Google Play" class="store-badge">
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="contact.title">İletişim</h2>
+            <p data-i18n="contact.subtitle">Sorularınız için bize ulaşın</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <a href="mailto:info@sesnot.com" class="contact-email">info@sesnot.com</a>
+                </div>
+                <form action="https://formspree.io/f/mrbqwzwg" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" data-i18n-placeholder="contact.form.name" placeholder="Adınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" data-i18n-placeholder="contact.form.email" placeholder="E-posta Adresiniz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" data-i18n-placeholder="contact.form.subject" placeholder="Konu" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" data-i18n-placeholder="contact.form.message" placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" data-i18n="contact.form.submit">Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer.copyright">&copy; 2025 SesNot. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
